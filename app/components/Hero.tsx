@@ -1,8 +1,8 @@
 export default function Hero() {
   return (
     <section className="bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+      <div className="max-w-[1400px] mx-auto px-4">
+        <div className="grid md:grid-cols-[1.2fr_1fr] gap-20 items-start pt-12">
           
           {/* Image column */}
           <div className="w-full">
@@ -11,7 +11,7 @@ export default function Hero() {
 
           {/* Text column */}
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
               Therapy that helps you grow
             </h1>
 
@@ -19,7 +19,7 @@ export default function Hero() {
               Personalized plans and compassionate care to support your mental health journey.
             </p>
 
-            <button className="px-6 py-3 bg-black text-white rounded-md">
+            <button className="inline-flex items-center px-8 py-3 bg-black text-white rounded-md">
               Get Started
             </button>
           </div>
