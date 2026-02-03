@@ -13,7 +13,7 @@ export default function Post() {
         <p className="text-sm text-[#4b5a3a] mt-2">Jan 20, 2026 • By Dr. Maya Reynolds</p>
 
         <div className="mt-8">
-          <Image src="/images/blog3.jpg" alt="Burnout" width={900} height={500} className="rounded-md object-cover" />
+          <Image src="/images/blog3.png" alt="Burnout" width={900} height={500} className="rounded-md object-cover" />
         </div>
 
         <div className="prose prose-lg mt-8 text-[#2f3e1f]">
