@@ -1,52 +1,81 @@
+import Image from "next/image";
 export default function Services() {
   return (
-    <section className="bg-white py-28">
-      <div className="max-w-[1400px] mx-auto px-4">
-        
-        {/* Section header */}
-        <div className="max-w-xl mb-20 text-[#2f3e1f]">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-            Therapy services
-          </h2>
-          <p className="text-lg text-[#4b5a3a]">
-            Support tailored to your needs, wherever you are in your journey.
-          </p>
-        </div>
+    <section id="services" className="bg-[#fbf7ef] py-12 sm:py-16 lg:py-24">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-10">
-          
+        {/* Section Title */}
+        <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#2f3e1f] mb-10 sm:mb-12">
+          My Specialties
+        </h2>
+
+        {/* Cards Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+
           {/* Card 1 */}
-          <div className="border border-[#e6e1d6] rounded-2xl p-8 space-y-4">
-            <h3 className="text-xl font-semibold text-[#2f3e1f]">
-              Individual Therapy
+          <div className="border border-[#2f3e1f] bg-[#e9e5dc] p-6 sm:p-8 lg:p-10 flex flex-col">
+            <h3 className="text-xl font-semibold text-[#2f3e1f] mb-4">
+              Anxiety & Self-Esteem
             </h3>
-            <p className="text-[#4b5a3a]">
-              One-on-one sessions focused on your personal goals, growth,
-              and emotional wellbeing.
+
+            <p className="text-[#4b5a3a] text-base leading-relaxed mb-10">
+              Support for adults who feel overwhelmed by constant worry,
+              self-doubt, or pressure to hold everything together.
             </p>
+
+            <div className="mt-auto flex justify-center">
+              <Image
+                src="/images/service1.png"
+                alt="Anxiety and self-esteem therapy"
+                width={320}
+                height={320}
+                className="w-40 h-40 sm:w-48 sm:h-48 lg:w-64 lg:h-64 rounded-full object-cover"
+              />
+            </div>
           </div>
 
           {/* Card 2 */}
-          <div className="border border-[#e6e1d6] rounded-2xl p-8 space-y-4">
-            <h3 className="text-xl font-semibold text-[#2f3e1f]">
-              Anxiety & Stress
+          <div className="border border-[#2f3e1f] bg-[#e9e5dc] p-6 sm:p-8 lg:p-10 flex flex-col">
+            <h3 className="text-xl font-semibold text-[#2f3e1f] mb-4">
+              Relationships & Attachment
             </h3>
-            <p className="text-[#4b5a3a]">
-              Learn tools to manage anxiety, reduce overwhelm, and feel
-              more grounded in daily life.
+
+            <p className="text-[#4b5a3a] text-base leading-relaxed mb-10">
+              Therapy for navigating relationship patterns, emotional
+              disconnection, boundaries, and recurring interpersonal stress.
             </p>
+
+           <div className="mt-auto flex justify-center">
+              <Image
+                src="/images/service2.png"
+                alt="Relationships and attachment therapy"
+                width={320}
+                height={320}
+                className="w-40 h-40 sm:w-48 sm:h-48 lg:w-64 lg:h-64 rounded-full object-cover"
+              />
+            </div>
           </div>
 
           {/* Card 3 */}
-          <div className="border border-[#e6e1d6] rounded-2xl p-8 space-y-4">
-            <h3 className="text-xl font-semibold text-[#2f3e1f]">
-              Life Transitions
+          <div className="border border-[#2f3e1f] bg-[#e9e5dc] p-6 sm:p-8 lg:p-10 flex flex-col">
+            <h3 className="text-xl font-semibold text-[#2f3e1f] mb-4">
+              Burnout & High-Achieving Professionals
             </h3>
-            <p className="text-[#4b5a3a]">
-              Navigate change with clarity — relationships, career shifts,
-              or personal identity.
+
+            <p className="text-[#4b5a3a] text-base leading-relaxed mb-10">
+              Support for professionals experiencing exhaustion,
+              perfectionism, or a sense of losing themselves in work.
             </p>
+
+           <div className="mt-auto flex justify-center">
+              <Image
+                src="/images/service3.png"
+                alt="Burnout support for professionals"
+                width={320}
+                height={320}
+                className="w-40 h-40 sm:w-48 sm:h-48 lg:w-64 lg:h-64 rounded-full object-cover"
+              />
+            </div>
           </div>
 
         </div>
